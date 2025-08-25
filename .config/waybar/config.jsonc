@@ -56,7 +56,7 @@
 
     "custom/language": {
         "format": "{}",
-        "exec": "~/.config/waybar/scripts/language.sh",
+        "exec": "~/.config/Scripts/waybar/language.sh",
         "interval": 1,
         "on-click": "hyprctl switchxkblayout at-translated-set-2-keyboard next",
         "popup":"click"
@@ -66,7 +66,7 @@
     "custom/update": {
         "format": "",
         "tooltip": false,
-        "on-click": "kitty -e ~/.config/waybar/scripts/update_system.sh"
+        "on-click": "kitty -e ~/.config/Scripts/waybar/update_system.sh"
     },
 
     "backlight": {

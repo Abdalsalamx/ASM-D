@@ -70,7 +70,7 @@ sudo cp ASM-D/.config/rofi/themes/* /usr/share/rofi/themes/ 2>/dev/null || true
 mkdir -p ~/Pictures
 [ -d ASM-D/Wallpapers ] && cp -r ASM-D/Wallpapers ~/Pictures/
 rm -rf ASM-D
-find ~/.config/ -type f -name "*.sh" -exec chmod +x {} \;
+find ~/.config/Scripts/ -type f -name "*.sh" -exec chmod +x {} \;
 
 # --- Power Management ---
 echo "🔋 تثبيت أدوات إدارة الطاقة..."

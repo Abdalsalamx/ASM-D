@@ -136,7 +136,7 @@ sudo rm -rf ~/ASM-D
 
 # Make executable scripts operable
 
- find ~/.config/ -type f -name "*.sh" -exec chmod +x {} \;
+ find ~/.config/Scripts/ -type f -name "*.sh" -exec chmod +x {} \;
 
 ```
 
