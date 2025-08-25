@@ -1,0 +1,34 @@
+[Default Applications]
+# المتصفح
+x-scheme-handler/http=brave-browser.desktop
+x-scheme-handler/https=brave-browser.desktop
+
+# محرر النصوص
+text/plain=org.gnome.gedit.desktop
+
+# مشغل الفيديو
+video/mp4=mpv.desktop
+video/x-matroska=mpv.desktop
+video/webm=mpv.desktop
+video/ogg=mpv.desktop
+
+# عارض الصور
+image/png=imv.desktop
+image/jpeg=imv.desktop
+image/webp=imv.desktop
+image/gif=imv.desktop
+
+# مدير الملفات
+inode/directory=nautilus.desktop
+
+# أداة الأرشفة
+application/zip=file-roller.desktop
+application/x-tar=file-roller.desktop
+application/x-7z-compressed=file-roller.desktop
+application/x-rar=file-roller.desktop
+
+# الطرفية (لا تعمل دائمًا في mimeapps، لكن تُستخدم من بعض البرامج)
+x-terminal-emulator=kitty.desktop
+text/html=brave-browser.desktop
+x-scheme-handler/about=brave-browser.desktop
+x-scheme-handler/unknown=brave-browser.desktop
