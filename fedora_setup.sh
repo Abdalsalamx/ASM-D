@@ -39,7 +39,7 @@ sudo dnf install -y vlc mpv gthumb imv playerctl pavucontrol
 
 # --- Applications ---
 echo "📱 تثبيت التطبيقات..."
-sudo dnf install -y chromium firefox brave-browser nautilus gedit
+sudo dnf install -y chromium firefox brave-browser nautilus gedit copyq
 
 # --- Fonts ---
 echo "🔤 تثبيت الخطوط..."
