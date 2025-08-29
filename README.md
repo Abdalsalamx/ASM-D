@@ -91,7 +91,7 @@ sudo dnf install vlc mpv gthumb imv playerctl pavucontrol
 
 ```bash
 # Install Applications
-sudo dnf install chromium firefox brave-browser nautilus gedit
+sudo dnf install chromium firefox brave-browser nautilus gedit copyq
 ```
 
 ---
