@@ -1,0 +1,138 @@
+/* Minimal Dark Theme */
+* {
+    font-family: "Font Awesome","JetBrains Mono";
+    font-weight: 800;
+    font-size: 14px;
+    letter-spacing: 0.01em; 
+    border-radius: 12px;
+}
+
+/* Main Bar */
+window#waybar {
+    font-size: 14px;
+    background: transparent;
+    color: #e3e6ee;
+    padding: 0;
+    margin: 0;
+}
+
+/* Workspaces */
+#workspaces {
+    background: rgba(0, 0, 0, 0.6);
+    color: #e3e6ee;
+    padding: 1px 2px;
+    border: none;
+    box-shadow: none;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+#workspaces button {
+    color: #bfc7d5;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    margin: 0 3px;
+    padding: 0;
+    min-width: 20px;
+    min-height: 20px;
+    border: 2px solid transparent;
+    box-shadow: none;
+    font-weight: 500;
+    opacity: 0.5;
+}
+
+#workspaces button.active {
+    background: #0D56DC;
+    color: #fff;
+    border-radius: 50%;
+    border: 2px solid #2bceeb;
+    opacity: 1;
+}
+
+#workspaces button.urgent {
+    background: #ef4444;
+    color: #fff;
+    border-radius: 50%;
+    border: 2px solid #e29242;
+    opacity: 1;
+}
+#workspaces button:not(.active):not(.empty):not(.urgent):not(.special):not(.visible){
+    background: #494848;
+    color: #ccc;
+}
+
+/* Modules*/
+#clock,
+#custom-menu,
+#battery,
+#network,
+#wireplumber,
+#backlight,
+#tray,
+#window,
+#language,
+#custom-update,
+#taskbar {
+    background-color: rgba(0, 0, 0, 0.6);  
+    color: #fff;
+    padding: 0 14px;
+    margin: 0 4px;
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: all 0.2s cubic-bezier(.4,2,.6,1);
+}
+
+#taskbar button {
+    padding: 0;
+    margin: 1px 2px;
+    min-width: 18px;
+    min-height: 18px;
+}
+
+/* Special States */
+
+#network.disconnected {
+    background: rgba(255, 0, 0, 0.7);
+    color: #ffffff;
+    font-weight: 600;
+}
+
+#wireplumber.muted {
+    background: rgba(255, 0, 0, 0.7);
+    color: #ffffff;
+}
+
+/* Hover Effects */
+#workspaces button:hover:not(.active):not(.urgent) {
+    background: rgba(40, 44, 52, 0.55);
+    color: #fff;
+    box-shadow: 0 0 0 2px rgba(122,162,247,0.10);
+}
+
+button:hover {
+    background: rgba(141, 156, 228, 0.18);
+    color: #22223b;
+    
+    transition: all 0.15s cubic-bezier(.4,2,.6,1);
+}
+
+#clock:hover,
+#battery:hover,
+#network:hover,
+#wireplumber:hover,
+#backlight:hover,
+#tray:hover,
+#window:hover,
+#custom-update:hover,
+#language:hover {
+    background: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+}
+
+/* Animations */
+@keyframes blink {
+    to {
+        opacity: 0.7;
+    }
+}
+
+
+

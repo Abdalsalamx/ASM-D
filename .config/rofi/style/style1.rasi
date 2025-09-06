@@ -1,0 +1,55 @@
+/**
+ * Rofi Power Menu Theme
+ * Modern design with rounded corners
+ */
+
+configuration {
+    modi: "drun,run,window";
+    show-icons: false;
+    icon-theme: "Papirus";
+    font: "JetBrains Mono 12";
+    display-drun: "";
+    drun-display-format: "{name}";
+}
+
+window {
+    orientation: vertical;
+    children: [listview];
+    width: 300px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+mainbox {
+    children: [listview];
+}
+
+listview {
+    lines: 5;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: transparent;
+}
+
+element {
+    padding: 8px;
+    border-radius: 8px;
+    background-color: transparent;
+    text-color: #e5e5e5;
+}
+
+element selected {
+    background-color:rgb(13, 86, 220);
+    text-color: #ffffff;
+}
+
+element-text {
+    background-color: inherit;
+    text-color: inherit;
+    vertical-align: 0.5;
+}
+
+element-icon {
+    size: 24px;
+    background-color: inherit;
+}
